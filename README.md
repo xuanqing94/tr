@@ -1,5 +1,5 @@
 # tr
-code for *Better Generalization by Efficient Trust Region Method*
+code for *Better Generalization by Efficient Trust Region Method*, Liu et al. 2018
 
 ## How-to
 0. `cd tr/` 
