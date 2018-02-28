@@ -1,0 +1,5 @@
+*.pth
+*.txt
+*.pyc
+__pycache__
+nohup

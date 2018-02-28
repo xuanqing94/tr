@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "./main.py", line 212, in <module>
+    main()
+  File "./main.py", line 180, in main
+    net.load_state_dict(torch.load(opt.modelIn))
+  File "/home/luinx/.local/lib/python3.6/site-packages/torch/serialization.py", line 259, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: './vgg16/b2048/adam100_lr0.1'
+Traceback (most recent call last):
+  File "./main.py", line 347, in <module>
+    main()
+  File "./main.py", line 338, in main
+    train_tr_full_grad(data, data_test, net, loss_f, opt.lr, opt.radius, opt.max_inner, opt.epoch)
+  File "./main.py", line 195, in train_tr_full_grad
+    full_grad = full_grad(data, net, loss_f)
+UnboundLocalError: local variable 'full_grad' referenced before assignment
+./run.sh: line 8: 25473 Terminated              CUDA_VISIBLE_DEVICES=0,1,2,3 ./main.py --method tr_full_grad --batchSize ${b} --epoch 100 --lr 0.1 --max_inner 1 --radius 2 --ngpu 4 --modelOut tr_full_grad.pth > log_tr_full_grad.txt
